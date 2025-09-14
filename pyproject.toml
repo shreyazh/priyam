@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "priyam"
+version = "1.0.0"
+description = "A comprehensive Python package for mathematical operations"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "The Priyam Team", email = "usershreyash@gmail.com"}
+]
+maintainers = [
+    {name = "The Priyam Team", email = "usershreyash@gmail.com"}
+]
+keywords = ["math", "utilities", "statistics", "algebra", "number-theory"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pytz>=2021.3",
+    "python-dateutil>=2.8.2",
+    "sympy>=1.9"
+]
+
+[project.urls]
+Homepage = "https://priyam-python.vercel.app"
+Documentation = "hhttps://github.com/shreyazh/priyam/docs"
+Repository = "https://github.com/shreyazh/priyam"
+Issues = "https://github.com/shreyazh/priyam/issues"
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.package-data]
+"priyam" = ["*.txt", "*.md"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.9",
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+]
