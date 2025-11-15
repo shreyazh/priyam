@@ -3,7 +3,6 @@ import math
 
 Number = Union[int, float]
 
-
 class Kinematics:
     """
     Standard 1D kinematics under constant acceleration.

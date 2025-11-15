@@ -12,12 +12,8 @@ This package provides utilities for:
 """
 
 from .string_utils import *
-from .number_utils import *
-from .date_time_utils import *
-from .number_theory import *
-from .algebra import *
-from .probability_stats import *
 from .latex_support import *
+from .pmath
 
 __version__ = "1.0.0"
 __author__ = "justshreyash"
