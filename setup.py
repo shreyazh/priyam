@@ -3,8 +3,13 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+# Only include main production dependencies from requirements.txt
+def parse_requirements(filename):
+    with open(filename, "r", encoding="utf-8") as fh:
+        return [line.strip() for line in fh if line.strip() and not line.startswith("#") \
+                and not any(line.startswith(dev_pkg) for dev_pkg in [
+                    "pytest", "pytest-cov", "black", "flake8", "sphinx", "sphinx-rtd-theme", "requests", "beautifulsoup4", "playwright", "lxml", "opencv-python", "pytesseract", "Pillow", "yt-dlp", "scikit-image", "tk", "reportlab"
+                ])]
 
 setup(
     name="priyam",
@@ -32,7 +37,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     python_requires=">=3.7",
-    install_requires=requirements,
+    install_requires=parse_requirements("requirements.txt"),
     extras_require={
         "dev": [
             "pytest>=6.0",
@@ -41,7 +46,18 @@ setup(
             "flake8>=3.9",
             "sphinx>=4.0",
             "sphinx-rtd-theme>=1.0",
-        ],
+            "requests",
+            "beautifulsoup4",
+            "playwright",
+            "lxml",
+            "opencv-python",
+            "pytesseract",
+            "Pillow",
+            "yt-dlp",
+            "scikit-image  ",
+            "tk",
+            "reportlab"
+        ]
     },
     project_urls={
         "Bug Reports": "https://github.com/shreyazh/priyam/issues",

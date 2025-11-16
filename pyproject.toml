@@ -39,7 +39,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://priyam-python.vercel.app"
-Documentation = "hhttps://github.com/shreyazh/priyam/docs"
+Documentation = "https://github.com/shreyazh/priyam/docs"
 Repository = "https://github.com/shreyazh/priyam"
 Issues = "https://github.com/shreyazh/priyam/issues"
 
