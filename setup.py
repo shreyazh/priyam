@@ -13,7 +13,7 @@ def parse_requirements(filename):
 
 setup(
     name="priyam",
-    version="1.0.2",
+    version="0.0.1",
     author="justshreyash",
     author_email="usershreyash@gmail.com",
     description="Comprehensive suite for Math, Physics, Chemistry, Computer Science, Algorithms, Utilities, Desktop GUI tools.",
