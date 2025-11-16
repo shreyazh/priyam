@@ -11,3 +11,10 @@ requests
 beautifulsoup4
 playwright
 lxml
+opencv-python
+pytesseract
+Pillow
+yt-dlp
+scikit-image  
+tk
+reportlab

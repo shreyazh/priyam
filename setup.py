@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="priyam",
-    version="1.0.0",
+    version="1.0.1",
     author="justshreyash",
     author_email="usershreyash@gmail.com",
     description="A comprehensive Python package for mathematical operations",

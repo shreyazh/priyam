@@ -1,13 +1,23 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: priyam
-Version: 1.0.0
+Version: 1.0.1
 Summary: A comprehensive Python package for mathematical operations
 Home-page: https://github.com/shreyazh/priyam
 Author: justshreyash
-Author-email: usershreyash@gmail.com
-Project-URL: Bug Reports, https://github.com/shreyazh/priyam/issues
-Project-URL: Source, https://github.com/shreyazh/priyam
-Project-URL: Documentation, https://github.com/shreyazh/priyam/docs
+Author-email: The Priyam Team <usershreyash@gmail.com>
+Maintainer-email: The Priyam Team <usershreyash@gmail.com>
+License: Copyright © 2025 Shreyash Srivastva
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://priyam-python.vercel.app
+Project-URL: Documentation, hhttps://github.com/shreyazh/priyam/docs
+Project-URL: Repository, https://github.com/shreyazh/priyam
+Project-URL: Issues, https://github.com/shreyazh/priyam/issues
+Keywords: math,utilities,statistics,algebra,number-theory
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Education
 Classifier: Intended Audience :: Science/Research
@@ -23,39 +33,8 @@ Classifier: Topic :: Scientific/Engineering :: Mathematics
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
-License-File: LICENSE
-Requires-Dist: pytz>=2021.3
-Requires-Dist: python-dateutil>=2.8.2
-Requires-Dist: sympy>=1.9
-Requires-Dist: pytest>=6.0
-Requires-Dist: pytest-cov>=2.0
-Requires-Dist: black>=21.0
-Requires-Dist: flake8>=3.9
-Requires-Dist: sphinx>=4.0
-Requires-Dist: sphinx-rtd-theme>=1.0
-Requires-Dist: requests
-Requires-Dist: beautifulsoup4
-Requires-Dist: playwright
-Requires-Dist: lxml
 Provides-Extra: dev
-Requires-Dist: pytest>=6.0; extra == "dev"
-Requires-Dist: pytest-cov>=2.0; extra == "dev"
-Requires-Dist: black>=21.0; extra == "dev"
-Requires-Dist: flake8>=3.9; extra == "dev"
-Requires-Dist: sphinx>=4.0; extra == "dev"
-Requires-Dist: sphinx-rtd-theme>=1.0; extra == "dev"
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
-Dynamic: home-page
-Dynamic: license-file
-Dynamic: project-url
-Dynamic: provides-extra
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
+License-File: LICENSE
 
 # Priyam
 

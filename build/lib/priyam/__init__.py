@@ -4,4 +4,6 @@ from .pmath import *
 from .chemistry import *
 from .cs import *
 from .physics import *
-from .linkChecker import run_linkchecker as linkchecker
+from .apps import run_linkchecker as linkchecker
+from .apps import run_notepad as notepad
+from .apps import run_extract as slide_extract
