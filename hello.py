@@ -1,7 +1,3 @@
-from priyam import LinkCheckerApp
-import tkinter as tk
+from priyam import linkchecker
 
-root = tk.Tk()
-app = LinkCheckerApp(root)
-# They could customize the app here
-root.mainloop()
+linkchecker()

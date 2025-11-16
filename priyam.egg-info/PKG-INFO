@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: priyam
+Version: 1.0.0
+Summary: A comprehensive Python package for mathematical operations
+Home-page: https://github.com/shreyazh/priyam
+Author: justshreyash
+Author-email: usershreyash@gmail.com
+Project-URL: Bug Reports, https://github.com/shreyazh/priyam/issues
+Project-URL: Source, https://github.com/shreyazh/priyam
+Project-URL: Documentation, https://github.com/shreyazh/priyam/docs
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytz>=2021.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: sympy>=1.9
+Requires-Dist: pytest>=6.0
+Requires-Dist: pytest-cov>=2.0
+Requires-Dist: black>=21.0
+Requires-Dist: flake8>=3.9
+Requires-Dist: sphinx>=4.0
+Requires-Dist: sphinx-rtd-theme>=1.0
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: playwright
+Requires-Dist: lxml
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: flake8>=3.9; extra == "dev"
+Requires-Dist: sphinx>=4.0; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=1.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Priyam
+
+A comprehensive Python package for math, physics, computer science and chemistry.
+
+## Installation
+
+```bash
+pip install priyam
