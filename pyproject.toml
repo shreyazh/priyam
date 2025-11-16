@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "priyam"
 version = "1.0.1"
-description = "A comprehensive Python package for mathematical operations"
+description = "Comprehensive Python suite: Math, Physics, Chemistry, Computer Science, Algorithms, String & LaTeX utilities, GUI tools (link checker, notepad, slide extractor)"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {file = "LICENSE"}
@@ -15,11 +15,14 @@ authors = [
 maintainers = [
     {name = "The Priyam Team", email = "usershreyash@gmail.com"}
 ]
-keywords = ["math", "utilities", "statistics", "algebra", "number-theory"]
+keywords = [
+    "math", "utilities", "statistics", "algebra", "number-theory", "science", "physics", "chemistry", "computer-science", "algorithms", "graphs", "string", "latex", "desktop-app", "linkchecker", "notepad", "slide-extractor", "ocr"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
@@ -29,7 +32,11 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Topic :: Education",
     "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: User Interfaces",
 ]
 dependencies = [
     "pytz>=2021.3",
