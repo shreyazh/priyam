@@ -1,12 +1,12 @@
-from typing import Union, List, Dict, Callable, Optional
-from sympy import Function, dsolve, Derivative, pprint
-from sympy import ( symbols, Eq, sympify, solve, diff, integrate, limit, series, Matrix, det, eigenvals, simplify, lambdify, factorint, isprime, primerange, gcd, lcm, mod_inverse)
+from typing import Union, List, Callable, Optional
+from sympy import Function, dsolve, Derivative
+from sympy import ( symbols, Eq, sympify, solve, diff, integrate, limit, series, Matrix, det, simplify, lambdify, factorint, isprime, primerange, gcd, lcm, mod_inverse)
 import math
 import random
 from collections import Counter
 from datetime import datetime, timedelta
 import pytz
-from sympy
+import sympy
 from functools import reduce
 from dateutil import rrule
 from dateutil.relativedelta import relativedelta
@@ -30,26 +30,26 @@ class MathSolver:
 
     @staticmethod
     def solve_linear(a, b):
-    """
-    Solve a linear equation of the form ax + b = 0.
-    
-    Args:
-        a (float): Coefficient of x.
-        b (float): Constant term.
+        """
+        Solve a linear equation of the form ax + b = 0.
         
-    Returns:
-        float: The solution to the equation.
-        
-    Example:
-        >>> solve_linear(2, -4)
-        2.0
-    """
-    if a == 0:
-        if b == 0:
-            return "Infinite solutions"
-        else:
-            return "No solution"
-    return -b / a
+        Args:
+            a (float): Coefficient of x.
+            b (float): Constant term.
+            
+        Returns:
+            float: The solution to the equation.
+            
+        Example:
+            >>> solve_linear(2, -4)
+            2.0
+        """
+        if a == 0:
+            if b == 0:
+                return "Infinite solutions"
+            else:
+                return "No solution"
+        return -b / a
 
     @staticmethod
     def solve_quadratic(a, b, c):
@@ -745,29 +745,29 @@ class MathSolver:
 
     @staticmethod
     def convert_timezone(dt, from_tz, to_tz):
-    """
-    Convert a datetime from one timezone to another.
-    
-    Args:
-        dt (datetime): The datetime to convert.
-        from_tz (str): The source timezone (e.g., 'UTC', 'US/Eastern').
-        to_tz (str): The target timezone (e.g., 'UTC', 'US/Eastern').
+        """
+        Convert a datetime from one timezone to another.
         
-    Returns:
-        datetime: The converted datetime.
+        Args:
+            dt (datetime): The datetime to convert.
+            from_tz (str): The source timezone (e.g., 'UTC', 'US/Eastern').
+            to_tz (str): The target timezone (e.g., 'UTC', 'US/Eastern').
+            
+        Returns:
+            datetime: The converted datetime.
+            
+        Example:
+            >>> dt = datetime(2023, 1, 1, 12, 0, 0)
+            >>> convert_timezone(dt, 'UTC', 'US/Eastern')
+            datetime.datetime(2023, 1, 1, 7, 0, 0, tzinfo=<DstTzInfo 'US/Eastern' EST-1 day, 19:00:00 STD>)
+        """
+        from_zone = pytz.timezone(from_tz)
+        to_zone = pytz.timezone(to_tz)
         
-    Example:
-        >>> dt = datetime(2023, 1, 1, 12, 0, 0)
-        >>> convert_timezone(dt, 'UTC', 'US/Eastern')
-        datetime.datetime(2023, 1, 1, 7, 0, 0, tzinfo=<DstTzInfo 'US/Eastern' EST-1 day, 19:00:00 STD>)
-    """
-    from_zone = pytz.timezone(from_tz)
-    to_zone = pytz.timezone(to_tz)
-    
-    if dt.tzinfo is None:
-        dt = from_zone.localize(dt)
-    
-    return dt.astimezone(to_zone)
+        if dt.tzinfo is None:
+            dt = from_zone.localize(dt)
+        
+        return dt.astimezone(to_zone)
 
     @staticmethod
     def countdown_timer(end_time):
